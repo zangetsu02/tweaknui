@@ -30,7 +30,7 @@ const { stargazersCount, isLoading } = useGithubStars('zangetsu02', 'tweaknui')
 <template>
   <header class="sticky top-0 z-50 w-full backdrop-blur-lg bg-transparent">
     <div class="container mx-auto flex h-16 px-4 md:px-6 items-center justify-between">
-      <NuxtLink to="/">
+      <NuxtLink to="/" class="text-xl font-bold">
         tweaknui
       </NuxtLink>
       <nav class="hidden md:flex gap-4 lg:gap-8 items-center">
