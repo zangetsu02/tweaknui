@@ -4,7 +4,11 @@
       <EditorHeader />
 
       <main class="isolate flex flex-1 flex-col overflow-hidden">
-        <slot />
+        <div class="relative isolate flex flex-1 overflow-hidden">
+          <div class="hidden size-full md:block">
+            <slot />
+          </div>
+        </div>
       </main>
     </div>
   </UApp>
