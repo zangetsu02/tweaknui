@@ -56,59 +56,7 @@ const accordionItems = ref<AccordionItem[]>([
         <div class="relative flex w-full flex-col items-center justify-start gap-2 mt-2 mb-1 px-4">
           <UTabs :items="items" class="w-full" />
 
-          <UCollapsible class="flex flex-col  w-full border">
-            <UButton
-              class="rounded-none "
-              label="Primary Colors"
-              variant="ghost"
-              trailing-icon="i-lucide-chevron-down"
-              :ui="{
-                trailingIcon: 'group-data-[state=open]:rotate-180 transition-transform duration-200',
-              }"
-              block
-            />
-
-            <template #content>
-              <div class="bg-background border-t p-3">
-                <UFormField label="Primary">
-                  <div class="relative flex items-center gap-1">
-                    <div class="relative flex h-8 w-8 cursor-pointer items-center justify-center overflow-hidden rounded border">
-                      <input type="color" class="absolute inset-0 h-full w-full cursor-pointer opacity-0">
-                    </div>
-                    <UInput type="text" class="flex-1" />
-                    <UButton icon="lucide:plus" />
-                  </div>
-                </UFormField>
-              </div>
-            </template>
-          </UCollapsible>
-
-          <UCollapsible class="flex flex-col  w-full border">
-            <UButton
-              class="rounded-none "
-              label="Secondary Colors"
-              variant="ghost"
-              trailing-icon="i-lucide-chevron-down"
-              :ui="{
-                trailingIcon: 'group-data-[state=open]:rotate-180 transition-transform duration-200',
-              }"
-              block
-            />
-
-            <template #content>
-              <div class="bg-background border-t p-3">
-                <UFormField label="Primary">
-                  <div class="relative flex items-center gap-1">
-                    <div class="relative flex h-8 w-8 cursor-pointer items-center justify-center overflow-hidden rounded border">
-                      <input type="color" class="absolute inset-0 h-full w-full cursor-pointer opacity-0">
-                    </div>
-                    <UInput type="text" class="flex-1" />
-                    <UButton icon="lucide:plus" />
-                  </div>
-                </UFormField>
-              </div>
-            </template>
-          </UCollapsible>
+          <EditorColors />
         </div>
       </div>
     </SplitterPanel>
