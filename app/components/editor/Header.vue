@@ -21,7 +21,7 @@ const { stargazersCount, isLoading } = useGithubStars('zangetsu02', 'tweaknui')
           <UButton variant="outline" class="flex items-center">
             Sponsor
           </UButton>
-
+          <AppThemeSelector />
           <NuxtLink class="flex items-center justify-center">
             <Icon name="simple-icons:discord" class="w-5 h-5" />
           </NuxtLink>
